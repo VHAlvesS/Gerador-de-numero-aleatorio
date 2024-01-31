@@ -1,0 +1,57 @@
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgba(176,196,222, 0.1);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Application */
+
+main {
+    max-width: 48rem;
+}
+
+.range {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.range > * {
+grid-column: 1/2;
+}
+
+.result {
+display: flex;
+align-items: center;
+}
+
+#RandomNumber {
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+  border: 8px solid rgba(49, 49, 49, 1);
+  font-size: 2rem;
+  background-color: rgba(49, 49, 49, 0.7);
+  color: white;
+  font-weight: 900;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
